@@ -7,6 +7,9 @@ import FCState from './Component/FCState';
 // import CC from './Component/CC';
 import MyState from './Component/MyState';
 import Toogle from './Component/Toogle';
+import CCProps from './Component/CCProps';
+import FCProps from './Component/FCProps';
+import Input from './Component/Input';
 
 
 function App() {
@@ -17,8 +20,14 @@ function App() {
      <FC/> */}
      {/* <Button/> */}
      {/* <FCState/> */}
-    {/* <MyState/> */}
-    <Toogle/>
+     {/* <MyState/> */}
+     {/* <Toogle/> */}
+     {/* <CCProps myName="vedant" myEmail="vedant@gmail.com"/>
+
+     <FCProps myNewName="anuj" myNewEmail="anuj@gmail.com" /> */}
+
+       <Input/>
+
     </div>
   );
 }

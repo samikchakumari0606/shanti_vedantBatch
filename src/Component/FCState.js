@@ -12,7 +12,7 @@ const FCState = () => {
     function handleMinus(){
          setCount(count-1)
     } 
-
+  
      
   return (
     <div>
