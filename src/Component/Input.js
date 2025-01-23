@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 
 const Input = () => {
     const [data,setData]=useState("")//user value
-    //value show
+    const [print,setPrint]=useState(false)                                  //value show
 
 
     function getData(event){
@@ -10,18 +10,26 @@ const Input = () => {
         setData(event.target.value)
     }
 
-    function handleClick(){
-        console.log()
-    }
+    
 
   return (
     <div>
       {/* Input component */}
-      <h2>{data}</h2>
+
+{/* <            h1>{data}</> */}
+     
+      {
+        print? <h2>{data}</h2>:null
+      }
+
+
       <input type="text" placeholder='enter username' onChange={getData} />
-      <button onClick={handleClick}>submit username</button>
+      <button onClick={()=>setPrint(true)}>submit myform</button>
     </div>
   )
 }
 
 export default Input
+
+
+
